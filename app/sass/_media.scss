@@ -1,0 +1,162 @@
+@import "bourbon";
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.about_us .statistic .stat {
+		background-position-x: 80px;
+	}
+	.services .service fieldset {
+		height: 320px;
+	}
+	.purchase .logo {
+		margin-right: 15px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header .top_menu .logo {
+		margin-right: 25px;
+	}
+	header .top_menu li a {
+		font-size: 0.6rem;
+	}
+	header .top_menu .links {
+		padding-top: 5px;
+	}
+	header .top_menu .links li a {
+		font-size: 0.5rem;
+	}
+	.about_us button {
+		width: 180px;
+	}
+	.services .service fieldset {
+		height: 250px;
+		margin-bottom: 20px;
+	}
+	.about_us .statistic .stat {
+		background-position-x: center;
+		border-right: none;
+		border-bottom: 1px solid #b0b0b0;
+		margin-bottom: 20px;
+	}
+	.prices .price {
+		margin-bottom: 15px;
+	}
+	.purchase .purchase_main {
+		padding-left: 125px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	html {
+		font-size: 14px;
+	}
+	button {
+		padding: 10px 25px;
+	}
+	header .top_menu nav {
+		margin-left: 10px;
+	}
+	header .top_menu .links {
+		display: inline-block;
+		margin-left: 10px;
+		float: none;
+	}
+	header .header_main {
+		padding: 80px 0;
+	}
+	header .header_main .item h1 {
+		font-size: 1.5rem;
+	}
+	header .top_menu .logo {
+		width: 100%;
+		text-align: center;
+	}
+	header .top_menu nav li {
+		margin-right: 10px;
+	}
+	.about_us .statistic .stat {
+		background-position-x: center;
+	}
+	.our_team .teammate {
+		margin-bottom: 15px;
+	}
+	.portfolio .masonry .grid-sizer, .portfolio .masonry .portfolio_item,
+	.portfolio .masonry .grid-sizer, .portfolio .masonry .grid-sizer {
+		width: 100%;
+	}
+	.purchase button {
+		margin: 15px auto 0;
+		display: block;
+		float: none;
+	}
+	.blog .blog_main .grid-sizer, .blog .blog_main .blog_post,
+	.blog .blog_main .blog_post {
+		width: 100%;
+	}
+	.services .service fieldset {
+		height: 210px;
+	}
+	.our_team .teammate_descr {
+		opacity: 1;
+	}
+	.about_us button {
+		margin-bottom: 10px;
+	}
+	.about_us .about_us_main img {
+		height: 150px;
+	}
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.services .service fieldset {
+		height: 240px;
+	}
+	header .header_main .owl-carousel .owl-controls {
+		font-size: 20px;
+	}
+	header .header_main .owl-carousel .owl-controls .owl-prev, header .header_main .owl-carousel .owl-controls .owl-next {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+	}
+	header .header_main .item h1 {
+		font-size: 1.1rem;
+	}
+	header .top_menu nav {
+		text-align: center;
+	}
+	header .top_menu .links {
+		margin: 0;
+		display: block;
+		text-align: center;
+	}
+}

@@ -1,0 +1,132 @@
+@import "bourbon";
+@import "sass/vars";
+@import "sass/base";
+
+header {
+	.top_menu {
+		padding: 15px 0;
+		.logo {
+			float: left;
+			margin-right: 100px;
+			text-transform: uppercase;
+			font-family: $montserrat;
+			font-size: 1rem;
+			color: #757575;
+			img {
+				margin-right: 10px;
+				position: relative;
+				top: -5px;
+			}
+		}
+		li {
+			display: inline-block;
+			a {
+				text-decoration: none;
+				color: #b5b5b5;
+			}
+		}
+		nav {
+			display: inline-block;
+			li {
+				text-transform: uppercase;
+				margin-right: 15px;
+				padding-top: 5px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		.links {
+			float: right;
+			li {
+				&:last-child {
+					a {
+						border-right: none;
+						padding-right: 0;
+					}
+				}
+				a {
+					border-right: 1px solid #b5b5b5;
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+	.header_main {
+		background: url('../img/header_bg.jpg') no-repeat center;
+		background-size: cover;
+		padding: 200px 0;
+		.item {
+			text-align: center;
+			p {
+				font-family: $crimson;
+				font-size: 0.8rem;
+				color: #fff;
+			}
+			h1 {
+				text-transform: uppercase;
+				font-family: $amsdam;
+				font-size: 2rem;
+				color: #fff;
+				&:before {
+					content: '';
+					display: block;
+					margin: 0 auto 30px auto;
+					height: 5px;
+					width: 40vw;
+					background: url('../img/border_light.png');
+				}
+				&:after {
+					content: '';
+					display: block;
+					margin: 30px auto 0 auto;
+					height: 5px;
+					width: 40vw;
+					background: url('../img/border_light.png');
+				}
+			}
+			button {
+				position: relative;
+				// &:after {
+				// 	position: absolute;
+				// 	content: '';
+				// 	display: block;
+				// 	width: 15px;
+				// 	height: 50px;
+				// 	background: url('../img/arrow.png') no-repeat;
+				// 	left: 60px;
+				// 	bottom: -44px;
+				// }
+			}
+		}
+		.owl-carousel {
+			position: relative;
+			.owl-controls {
+				color: #8e9c96;
+				position: absolute;
+				top: 40%;
+				font-size: 35px;
+				width: 100%;
+				.owl-prev {
+					margin-left: 30px;
+					float: left;
+					padding-right: 5px;
+				}
+				.owl-next {
+					margin-right: 30px;
+					float: right;
+					padding-left: 5px;
+				}
+				.owl-prev,
+				.owl-next {
+					background-color: #fff;
+					border-radius: 50%;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}
